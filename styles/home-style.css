@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: kanit, sans-serif;
+    scroll-behavior: smooth;
+    /* box-sizing: border-box; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    background: rgb(44, 44, 44);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(173, 255, 47, 0.2);
+}
+nav .links{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+nav i{
+    display: none;
+}
+.logo{
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(173, 255, 47);
+}
+nav .links .main{
+    color: greenyellow;
+}
+.nav .links a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: greenyellow;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+nav .links a:hover::after{
+    width: 100%;
+}
+nav .links a:hover{
+    color: greenyellow;
+}
+.first{
+    background: rgb(44, 44, 44);
+    height: 92vh;
+    color: white;
+}
+.my-picture{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.my-picture img{
+    height: 800px;
+}
+.home-container{
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-text{
+    width: 50%;
+}
+.home-text h2{
+    font-size: 55px;
+    font-weight: 600;
+}
+.green-lettre{
+    color: greenyellow;
+}
+.home-text h3{
+    font-size: 45px;
+    font-weight: 600;
+    margin: 1vh 0;
+    color: greenyellow;
+}
+.home-text p{
+    font-size: 25px;
+    margin: 1vh 0;
+}
+.home-text a{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    background: greenyellow;
+    border: solid 2px greenyellow;
+    border-radius: 20px;
+    padding: 0.5vh 2vh;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.home-text a:hover{
+    color: greenyellow;
+    background: transparent;
+}
+.second{
+    height: 90vh;
+    background: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container{
+    width: 80%;
+    margin: auto;
+}
+.about-container h2{
+    font-size: 40px;
+    color: white;
+}
+.about-container p{
+    font-size: 25px;
+    margin: 2vh 0;
+}
+.about-container .about-title{
+    font-size: 50px;
+    color: greenyellow;
+}
+.profile{
+    height: 200px;
+    margin: 2vh 0;
+}
+.third{
+    background: rgb(44, 44, 44);
+    height: 80vh;
+    color: white;
+}
+.skills-container{
+    width: 80%;
+    margin: auto;
+}
+.skills-container h2{
+    text-align: center;
+    font-size: 50px;
+    color: greenyellow;
+    padding: 8vh 0;
+}
+.skills-box{
+    display: flex;
+    justify-content: space-around;
+}
+.rec{
+    background: white;
+    width: 60vh;
+    height: 4vh;
+    border-radius: 30px;
+    border: solid 5px white;
+}
+.rec div{
+    background: greenyellow;
+    height: 100%;
+    border-radius: 30px;
+}
+.text-skill{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 1vh;
+}
+.skill{
+    margin: 5vh 0;
+}
+.fourth{
+    height: 70vh;
+    background: rgb(63, 63, 63);
+    color: white;
+}
+.work-container{
+    width: 100%;
+    margin: auto;
+}
+.work-container h2{
+    text-align: center;
+    font-size: 50px;
+    color: greenyellow;
+    padding: 8vh 0;
+}
+.works{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.work img{
+    background: black;
+    height: 25vh;
+    width: 44.4vh;
+}
+.works p{
+    font-size: 25px;
+    margin: 1vh 0;
+}
+.html{
+    width: 90%;
+}
+.css{
+    width: 85%;
+}
+.js{
+    width: 75%;
+}
+.boo{
+    width: 60%;
+}
+.react{
+    width: 70%;
+}
+.jq{
+    width: 50%;
+}
+footer{
+    height: 40vh;
+    background: rgb(29, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer h2{
+    font-size: 50px;
+    color: greenyellow;
+}
+footer p{
+    font-size: 40px;
+    margin: 2vh 0;
+}
+footer i{
+    color: greenyellow;
+}
+
+
+
+@media (max-width: 750px) {
+    nav .links{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav i{
+        display: block;
+        color: greenyellow;
+        font-size: 50px;
+    }
+    .home-text{
+        width: 100%;
+        text-align: center;
+    }
+    .my-picture{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+    nav{
+        padding: 0 6%;
+    }
+    nav .links{
+        width: 50%;
+    }
+    .skills-box{
+        display: block;
+    }
+    .home-text{
+        width: 100%;
+        text-align: center;
+    }
+    .third{
+        background: rgb(44, 44, 44);
+        height: 130vh;
+        color: white;
+    }
+    .text-skill{
+        width: 80%;
+    }
+    .rec{
+        width: 80%;
+    }
+    .works{
+        display: block;
+    }
+    .fourth{
+        height: 150vh;
+        background: rgb(63, 63, 63);
+        color: white;
+    }
+    .work{
+        margin: 8vh 0;
+    }
+    .my-picture{
+        display: none;
+    }
+    .about-container p{
+        width: 400px;
+        margin: auto;
+        text-align: start;
+    }
+    .second{
+        height: 150vh;
+    }
+}
